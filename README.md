@@ -8,11 +8,4 @@ Testing the App into Simulator: When the app is launched, it will display the li
 
 ![Simulator Screen Shot - iPhone 14 Pro - 2023-10-23 at 20 50 34](https://github.com/MohammadHossanICT/ChallangeDemo/assets/100123501/ad56cb15-743d-4fb3-9f10-393ca7028bee)
 
-Accessibility : I have tested the accessibility into a simulator . To test the accessibility , we need to  select the Accessibility inspector and select the simulator and start the navigation. Here is the screenshot.  
-
-
-
-
-Here is the screenshot when the tube line and service update with accessibility voice over ..
-
-
+Accessibility : I have tested the accessibility into a simulator . To test the accessibility , we need to  select the Accessibility inspector and select the simulator and start the navigation. Here is the screenshot.  Here is the screenshot when the tube line and service update with accessibility voice over.
