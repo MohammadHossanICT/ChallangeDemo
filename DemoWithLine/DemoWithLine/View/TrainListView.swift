@@ -32,7 +32,7 @@ struct TrainListView: View {
                         getToolBarView()
                     }
                 }
-                .navigationTitle(Text("Train List"))
+                .navigationTitle(Text("Tube Line List"))
             }.task {
                 await getDataFromAPI()
             }

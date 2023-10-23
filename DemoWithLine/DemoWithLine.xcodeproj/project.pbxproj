@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5270F1362AE2CAF1005BC845 /* DemoWithLineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270F1352AE2CAF1005BC845 /* DemoWithLineApp.swift */; };
-		5270F1382AE2CAF1005BC845 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270F1372AE2CAF1005BC845 /* ContentView.swift */; };
 		5270F13A2AE2CAF2005BC845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5270F1392AE2CAF2005BC845 /* Assets.xcassets */; };
 		5270F13D2AE2CAF2005BC845 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5270F13C2AE2CAF2005BC845 /* Preview Assets.xcassets */; };
 		5270F1472AE2CAF3005BC845 /* DemoWithLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270F1462AE2CAF3005BC845 /* DemoWithLineTests.swift */; };
@@ -26,6 +25,14 @@
 		5270F1792AE2D2C2005BC845 /* TrainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270F1782AE2D2C2005BC845 /* TrainListView.swift */; };
 		5270F17B2AE2D767005BC845 /* TrainCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270F17A2AE2D767005BC845 /* TrainCellView.swift */; };
 		529AFD172AE6821E00C7FBE6 /* TubeLineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529AFD162AE6821E00C7FBE6 /* TubeLineColor.swift */; };
+		52B7C6562AE6ACEF0097E2E5 /* FakeTrainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C6552AE6ACEF0097E2E5 /* FakeTrainRepository.swift */; };
+		52B7C6582AE6ADB90097E2E5 /* FakeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C6572AE6ADB90097E2E5 /* FakeNetworkManager.swift */; };
+		52B7C65A2AE6AE2E0097E2E5 /* NetworkingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C6592AE6AE2D0097E2E5 /* NetworkingMock.swift */; };
+		52B7C65D2AE6AED10097E2E5 /* tube.json in Resources */ = {isa = PBXBuildFile; fileRef = 52B7C65C2AE6AED10097E2E5 /* tube.json */; };
+		52B7C65F2AE6AEF30097E2E5 /* faile.json in Resources */ = {isa = PBXBuildFile; fileRef = 52B7C65E2AE6AEF30097E2E5 /* faile.json */; };
+		52B7C6612AE6AF330097E2E5 /* TrainListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C6602AE6AF330097E2E5 /* TrainListViewModelTest.swift */; };
+		52B7C6632AE6B3E20097E2E5 /* TrainRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C6622AE6B3E20097E2E5 /* TrainRepositoryTests.swift */; };
+		52B7C6652AE6B4FD0097E2E5 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B7C6642AE6B4FD0097E2E5 /* NetworkManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +55,6 @@
 /* Begin PBXFileReference section */
 		5270F1322AE2CAF1005BC845 /* DemoWithLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoWithLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5270F1352AE2CAF1005BC845 /* DemoWithLineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoWithLineApp.swift; sourceTree = "<group>"; };
-		5270F1372AE2CAF1005BC845 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5270F1392AE2CAF2005BC845 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5270F13C2AE2CAF2005BC845 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5270F1422AE2CAF3005BC845 /* DemoWithLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoWithLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +74,14 @@
 		5270F1782AE2D2C2005BC845 /* TrainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListView.swift; sourceTree = "<group>"; };
 		5270F17A2AE2D767005BC845 /* TrainCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCellView.swift; sourceTree = "<group>"; };
 		529AFD162AE6821E00C7FBE6 /* TubeLineColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColor.swift; sourceTree = "<group>"; };
+		52B7C6552AE6ACEF0097E2E5 /* FakeTrainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTrainRepository.swift; sourceTree = "<group>"; };
+		52B7C6572AE6ADB90097E2E5 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
+		52B7C6592AE6AE2D0097E2E5 /* NetworkingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingMock.swift; sourceTree = "<group>"; };
+		52B7C65C2AE6AED10097E2E5 /* tube.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tube.json; sourceTree = "<group>"; };
+		52B7C65E2AE6AEF30097E2E5 /* faile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = faile.json; sourceTree = "<group>"; };
+		52B7C6602AE6AF330097E2E5 /* TrainListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListViewModelTest.swift; sourceTree = "<group>"; };
+		52B7C6622AE6B3E20097E2E5 /* TrainRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRepositoryTests.swift; sourceTree = "<group>"; };
+		52B7C6642AE6B4FD0097E2E5 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +138,6 @@
 				5270F1622AE2CD93005BC845 /* NetworkLayer */,
 				5270F15F2AE2CB0C005BC845 /* Modal */,
 				5270F1352AE2CAF1005BC845 /* DemoWithLineApp.swift */,
-				5270F1372AE2CAF1005BC845 /* ContentView.swift */,
 				5270F1392AE2CAF2005BC845 /* Assets.xcassets */,
 				5270F13B2AE2CAF2005BC845 /* Preview Content */,
 			);
@@ -142,7 +155,13 @@
 		5270F1452AE2CAF3005BC845 /* DemoWithLineTests */ = {
 			isa = PBXGroup;
 			children = (
+				52B7C65B2AE6AE710097E2E5 /* json */,
+				52B7C6572AE6ADB90097E2E5 /* FakeNetworkManager.swift */,
+				52B7C6522AE6AC1B0097E2E5 /* ViewModelTest */,
 				5270F1462AE2CAF3005BC845 /* DemoWithLineTests.swift */,
+				52B7C6592AE6AE2D0097E2E5 /* NetworkingMock.swift */,
+				52B7C6622AE6B3E20097E2E5 /* TrainRepositoryTests.swift */,
+				52B7C6642AE6B4FD0097E2E5 /* NetworkManagerTests.swift */,
 			);
 			path = DemoWithLineTests;
 			sourceTree = "<group>";
@@ -201,6 +220,24 @@
 				5270F17A2AE2D767005BC845 /* TrainCellView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		52B7C6522AE6AC1B0097E2E5 /* ViewModelTest */ = {
+			isa = PBXGroup;
+			children = (
+				52B7C6552AE6ACEF0097E2E5 /* FakeTrainRepository.swift */,
+				52B7C6602AE6AF330097E2E5 /* TrainListViewModelTest.swift */,
+			);
+			path = ViewModelTest;
+			sourceTree = "<group>";
+		};
+		52B7C65B2AE6AE710097E2E5 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				52B7C65C2AE6AED10097E2E5 /* tube.json */,
+				52B7C65E2AE6AEF30097E2E5 /* faile.json */,
+			);
+			path = json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +353,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B7C65D2AE6AED10097E2E5 /* tube.json in Resources */,
+				52B7C65F2AE6AEF30097E2E5 /* faile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +374,6 @@
 			files = (
 				5270F1652AE2CE03005BC845 /* NetworkURL.swift in Sources */,
 				5270F17B2AE2D767005BC845 /* TrainCellView.swift in Sources */,
-				5270F1382AE2CAF1005BC845 /* ContentView.swift in Sources */,
 				5270F1712AE2CFA2005BC845 /* TrainData.swift in Sources */,
 				5270F1792AE2D2C2005BC845 /* TrainListView.swift in Sources */,
 				5270F1692AE2CE61005BC845 /* NetworkError.swift in Sources */,
@@ -355,6 +393,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5270F1472AE2CAF3005BC845 /* DemoWithLineTests.swift in Sources */,
+				52B7C65A2AE6AE2E0097E2E5 /* NetworkingMock.swift in Sources */,
+				52B7C6632AE6B3E20097E2E5 /* TrainRepositoryTests.swift in Sources */,
+				52B7C6612AE6AF330097E2E5 /* TrainListViewModelTest.swift in Sources */,
+				52B7C6652AE6B4FD0097E2E5 /* NetworkManagerTests.swift in Sources */,
+				52B7C6562AE6ACEF0097E2E5 /* FakeTrainRepository.swift in Sources */,
+				52B7C6582AE6ADB90097E2E5 /* FakeNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
