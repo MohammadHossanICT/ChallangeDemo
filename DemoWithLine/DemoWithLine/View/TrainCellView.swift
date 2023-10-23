@@ -14,7 +14,7 @@ struct TrainCellView: View {
     var body: some View {
         HStack {
             
-            Rectangle().getTubeColor(tflResponse.name)
+            Rectangle().foregroundColor(Color.getTubeColor(tubeLineName: tflResponse.name))
                 .frame(width: 10)
 
             VStack(alignment: .leading,spacing: 5) {

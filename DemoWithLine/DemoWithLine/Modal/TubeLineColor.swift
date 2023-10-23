@@ -8,44 +8,44 @@
 import Foundation
 import SwiftUI
 
-enum TubeLineColor: String, CaseIterable {
-    /// Name of the tube line
-    case Bakerloo
-    case Central
-    case Circle
-    case District
-    case Jubilee
-    case Metropolitan
-    case Northern
-    case Piccadilly
-    case Victoria
-    case Waterloo
-    case City
-    case Hammersmith
-
-    var name: String {
-        self.rawValue
+extension Color {
+    init(hex: UInt, alpha: Double = 1) {
+        self.init(
+            .sRGB,
+            red: Double((hex >> 16) & 0xff) / 255,
+            green: Double((hex >> 08) & 0xff) / 255,
+            blue: Double((hex >> 00) & 0xff) / 255,
+            opacity: alpha
+        )
     }
-}
 
-extension View {
-    func getTubeColor(_ color: String) -> some View {
-
-        switch color {
-        case "Bakerloo": return self.foregroundColor(.brown)
-        case "Central": return self.foregroundColor(.red)
-        case "Circle": return self.foregroundColor(.yellow)
-        case "District": return self.foregroundColor(.green)
-        case "Jubilee": return self.foregroundColor(.gray)
-        case "Metropolitan": return self.foregroundColor(.purple)
-        case "Northern": return self.foregroundColor(.black)
-        case "Piccadilly": return self.foregroundColor(.blue)
-        case "Victoria": return self.foregroundColor(.secondary)
-        case "Hammersmith & City": return self.foregroundColor(.orange)
-        case "Waterloo & City": return self.foregroundColor(.red)
-
+    static func getTubeColor(tubeLineName: String) -> Color {
+        
+        switch tubeLineName {
+        case "Bakerloo":
+            return Color(hex: 0xB36305)
+        case "Central":
+            return Color(hex: 0xE32017)
+        case "Circle":
+            return Color(hex: 0xFFD300)
+        case "District":
+            return Color(hex: 0x00782A)
+        case "Hammersmith & City":
+            return Color(hex: 0xF3A9BB)
+        case "Jubilee":
+            return Color(hex: 0xA0A5A9)
+        case "Metropolitan":
+            return Color(hex: 0x9B0056)
+        case "Northern":
+            return Color(hex: 0x000000)
+        case "Piccadilly":
+            return Color(hex: 0x003688)
+        case "Victoria":
+            return Color(hex: 0x0098D4)
+        case "Waterloo & City":
+            return Color(hex: 0x95CDBA)
         default:
-            return self.foregroundColor(.clear)
+            return .clear
         }
     }
 }
