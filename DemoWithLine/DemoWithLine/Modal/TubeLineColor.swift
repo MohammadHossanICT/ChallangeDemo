@@ -9,21 +9,23 @@ import Foundation
 import SwiftUI
 
 enum TubeLineColor: String, CaseIterable {
-  /// Name of the tube line
-  case Bakerloo
-  case Central
-  case Circle
-  case District
-  case Jubilee
-  case Metropolitan
-  case Northern
-  case Piccadilly
-  case Victoria
- // case Waterloo & City
+    /// Name of the tube line
+    case Bakerloo
+    case Central
+    case Circle
+    case District
+    case Jubilee
+    case Metropolitan
+    case Northern
+    case Piccadilly
+    case Victoria
+    case Waterloo
+    case City
+    case Hammersmith
 
-  var name: String {
-    self.rawValue
-  }
+    var name: String {
+        self.rawValue
+    }
 }
 
 extension View {
@@ -39,9 +41,11 @@ extension View {
         case "Northern": return self.foregroundColor(.black)
         case "Piccadilly": return self.foregroundColor(.blue)
         case "Victoria": return self.foregroundColor(.secondary)
+        case "Hammersmith & City": return self.foregroundColor(.orange)
+        case "Waterloo & City": return self.foregroundColor(.red)
 
         default:
-            return self.foregroundColor(.pink)
+            return self.foregroundColor(.clear)
         }
     }
 }

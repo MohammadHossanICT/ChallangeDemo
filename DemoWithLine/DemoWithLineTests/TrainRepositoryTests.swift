@@ -23,16 +23,18 @@ final class TrainRepositoryTests: XCTestCase {
 
     // when passes train list array will return with some data
     func test_when_get_People_list_success() async {
+
         let lists = try? await trainRepository.getList(for: URL(string:"tube")!)
         XCTAssertNotNil(lists)
         XCTAssertEqual(lists?.count, 11)
         XCTAssertEqual(lists?.first?.name, "Bakerloo")
+        XCTAssertEqual(lists?.first?.id, "bakerloo")
 
     }
-    // when fails, employee list will be nil
+    // when fails, train list will be nil
     func test_when_get_Train_list_fails() async throws {
+
         let lists = try? await trainRepository.getList(for: URL(string:"faile")!)
         XCTAssertNil(lists)
-
     }
 }

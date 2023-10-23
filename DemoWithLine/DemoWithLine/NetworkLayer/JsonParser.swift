@@ -16,9 +16,9 @@ extension JsonParser {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         do {
-           return try decoder.decode(T.self, from: data )
+            return try decoder.decode(T.self, from: data )
         } catch {
-           throw NetworkError.parsingError
+            throw NetworkError.parsingError
         }
     }
 }

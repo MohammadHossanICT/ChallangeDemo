@@ -12,7 +12,7 @@ protocol TrainRepository {
 
 struct TrainRepositoryImplementation {
     private let networkManager: Fetchable
-
+    
     init(networkManager: Fetchable) {
         self.networkManager = networkManager
     }
