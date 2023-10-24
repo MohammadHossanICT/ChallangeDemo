@@ -41,6 +41,11 @@ final class TrainListViewModelTest: XCTestCase {
         let localError = await trainListViewModel.customError
         XCTAssertEqual(localError, .invalidURL)
         XCTAssertNotNil(localError)
+        XCTAssertEqual(localError?.errorDescription, "Invalid URL")
+        let isErrorOccured = await trainListViewModel.isErrorOccured
+        XCTAssertEqual(isErrorOccured, false)
+        let isRefreshing = await trainListViewModel.refreshing
+        XCTAssertEqual(isRefreshing, false)
 
     }
 
@@ -53,6 +58,11 @@ final class TrainListViewModelTest: XCTestCase {
         let localError = await trainListViewModel.customError
         XCTAssertNotNil(localError)
         XCTAssertEqual(localError, NetworkError.dataNotFound)
+        XCTAssertEqual(localError?.errorDescription, "Failed to get data from API")
+        let isErrorOccured = await trainListViewModel.isErrorOccured
+        XCTAssertEqual(isErrorOccured, true)
+        let isRefreshing = await trainListViewModel.refreshing
+        XCTAssertEqual(isRefreshing, false)
 
     }
 
@@ -65,5 +75,10 @@ final class TrainListViewModelTest: XCTestCase {
         let localError = await trainListViewModel.customError
         XCTAssertNotNil(localError)
         XCTAssertEqual(localError, NetworkError.dataNotFound)
+        XCTAssertEqual(localError?.errorDescription, "Failed to get data from API")
+        let isErrorOccured = await trainListViewModel.isErrorOccured
+        XCTAssertEqual(isErrorOccured, true)
+        let isRefreshing = await trainListViewModel.refreshing
+        XCTAssertEqual(isRefreshing, false)
     }
 }

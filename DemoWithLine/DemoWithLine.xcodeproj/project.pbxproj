@@ -71,6 +71,7 @@
 		5270F1752AE2D0C0005BC845 /* TrainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainRepository.swift; sourceTree = "<group>"; };
 		5270F1782AE2D2C2005BC845 /* TrainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainListView.swift; sourceTree = "<group>"; };
 		5270F17A2AE2D767005BC845 /* TrainCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainCellView.swift; sourceTree = "<group>"; };
+		5274FF622AE7B68E00B9D6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		529AFD162AE6821E00C7FBE6 /* TubeLineColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubeLineColor.swift; sourceTree = "<group>"; };
 		52B7C6552AE6ACEF0097E2E5 /* FakeTrainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeTrainRepository.swift; sourceTree = "<group>"; };
 		52B7C6572AE6ADB90097E2E5 /* FakeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeNetworkManager.swift; sourceTree = "<group>"; };
@@ -130,11 +131,12 @@
 		5270F1342AE2CAF1005BC845 /* DemoWithLine */ = {
 			isa = PBXGroup;
 			children = (
-				5270F1772AE2D29A005BC845 /* View */,
-				5270F1742AE2D09A005BC845 /* TrainRepository */,
-				5270F1632AE2CD9F005BC845 /* ViewModel */,
-				5270F1622AE2CD93005BC845 /* NetworkLayer */,
+				5274FF622AE7B68E00B9D6A8 /* Info.plist */,
 				5270F15F2AE2CB0C005BC845 /* Modal */,
+				5270F1772AE2D29A005BC845 /* View */,
+				5270F1632AE2CD9F005BC845 /* ViewModel */,
+				5270F1742AE2D09A005BC845 /* TrainRepository */,
+				5270F1622AE2CD93005BC845 /* NetworkLayer */,
 				5270F1352AE2CAF1005BC845 /* DemoWithLineApp.swift */,
 				5270F1392AE2CAF2005BC845 /* Assets.xcassets */,
 				5270F13B2AE2CAF2005BC845 /* Preview Content */,
@@ -547,11 +549,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoWithLine/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoWithLine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,11 +579,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoWithLine/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoWithLine/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

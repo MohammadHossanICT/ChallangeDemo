@@ -12,7 +12,9 @@ struct TrainListView: View {
     @StateObject var viewModel = TrainListViewModel(repository: TrainRepositoryImplementation(networkManager: NetworkManager()))
     
     var body: some View {
-        NavigationStack {
+
+        NavigationView {
+            
             VStack {
                 if viewModel.customError != nil && !viewModel.refreshing {
                     alertView()

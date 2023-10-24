@@ -37,4 +37,16 @@ final class TrainRepositoryTests: XCTestCase {
         let lists = try? await trainRepository.getList(for: URL(string:"faile")!)
         XCTAssertNil(lists)
     }
+
+    func test_when_get_Train_list_fails_urlIncorrect() async throws {
+
+        do {
+            let lists = try await trainRepository.getList(for: URL(string:"www.text.com")!)
+            XCTAssertNil(lists)
+
+        } catch {
+            XCTAssertNotNil(error)
+            XCTAssertEqual(error as! NetworkError, .dataNotFound)
+        }
+    }
 }
